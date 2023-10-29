@@ -1,0 +1,4 @@
+toggles:
+  TOGGLE_1: true
+  toggle_2: false
+  another_TOGGLE: true
