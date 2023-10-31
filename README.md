@@ -207,11 +207,27 @@ public class ToggleConfig {
 
 ## Code examples
 
-### Check toggle state
+### Check if toggle is enabled
+```java
+toggleManager.isEnabled(AppToggle.TOGGLE_1);
+```
+
+### Check if toggle is disabled
+```java
+toggleManager.isDisabled(AppToggle.TOGGLE_1);
+```
 
 ### Enable toggle
+```java
+toggleManager.enable(AppToggle.TOGGLE_1);
+```
 
 ### Disable toggle
+```java
+toggleManager.disable(AppToggle.TOGGLE_1);
+```
 
-
-
+### Get all stored toggles
+```java
+toggleManager.getToggles();
+```

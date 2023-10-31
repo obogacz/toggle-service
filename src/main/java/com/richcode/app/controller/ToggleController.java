@@ -3,12 +3,14 @@ package com.richcode.app.controller;
 import com.richcode.app.AppToggle;
 import com.richcode.app.dto.ToggleData;
 import com.richcode.app.service.ToggleService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Objects;
 
+@Tag(name = "Toggles Data")
 @RestController
 @RequestMapping("/toggles")
 @RequiredArgsConstructor
