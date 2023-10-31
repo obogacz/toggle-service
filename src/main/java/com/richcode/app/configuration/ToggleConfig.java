@@ -4,6 +4,7 @@ import com.richcode.app.AppToggle;
 import com.richcode.toggle.manager.ToggleManager;
 import com.richcode.toggle.manager.ToggleManagerBuilder;
 import com.richcode.toggle.repository.InMemoryToggleStateRepository;
+import com.richcode.toggle.support.FilePropertiesLoader;
 import com.richcode.toggle.support.SpringApplicationContextPropertiesLoader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -22,6 +23,7 @@ public class ToggleConfig {
     public ToggleManager toggleManager() {
         return ToggleManagerBuilder.builder()
 //            .propertiesInitToggleStateProvider(SpringApplicationContextPropertiesLoader.load(applicationContext))
+//            .propertiesInitToggleStateProvider(FilePropertiesLoader.load("/full/path/to/toggles.properties"))
 //            .propertiesInitToggleStateProvider(FilePropertiesLoader.loadFromClassPath("toggles.properties"))
 //            .mapInitToggleStateProvider(Map.of(
 //                AppToggle.TOGGLE_1, true,
